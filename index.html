@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy a $750K block and discover it’s zoned “Public Park”. 2025 zoning decoder for VIC & QLD – 5 zones that kill extensions, 3 that double value overnight.">
+    <meta name="keywords" content="zoning laws Victoria, property zoning QLD, GRZ1 vs NRZ, schedule 1 overlay, planning permit trap, development potential 2025">
+    <meta name="robots" content="index, follow">
+    <title>2025 Zoning Decoder: Don’t Buy a $750K Park (VIC & QLD)</title>
+    <link rel="canonical" href="https://www.firstclasslegal.com.au/zoning">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --zone: #1a5d57;
+            --gold: #f4a261;
+            --red: #e74c3c;
+            --green: #27ae60;
+            --light: #f8f9fa;
+            --dark: #2b2d42;
+            --radius: 18px;
+            --shadow: 0 10px 35px rgba(0,0,0,0.12);
+        }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body {
+            font-family:'Inter',sans-serif;
+            line-height:1.8;
+            color:var(--dark);
+            background:#fff;
+            font-size:16px;
+        }
+        h1,h2,h3 { font-family:'Playfair Display',serif; color:var(--zone); }
+        h1 { font-size:2.8rem; text-align:center; color: #ffffff; }
+        h2 { font-size:2.2rem; margin:3rem 0 1.5rem; padding-bottom:0.8rem; border-bottom:5px solid var(--gold); display:inline-block; }
+        p { margin-bottom:1.2rem; text-align:justify; }
+        a { color:var(--zone); text-decoration:none; font-weight:600; }
+        a:hover { color:var(--red); }
+        .container { max-width:1100px; margin:0 auto; padding:0 1.5rem; }
+
+        header {
+            background:linear-gradient(135deg,var(--zone) 0%,#0f3d3a 100%);
+            color:white;
+            text-align:center;
+            padding:5rem 0 4rem;
+        }
+        .hero-title { font-size:3rem; margin-bottom:1rem; }
+        .hero-subtitle { font-size:1.3rem; max-width:800px; margin:0 auto 2rem; opacity:0.95; }
+        .cta {
+            background:var(--gold);
+            color:white;
+            padding:1rem 2.5rem;
+            border-radius:50px;
+            font-weight:700;
+            text-transform:uppercase;
+            letter-spacing:1px;
+            box-shadow:0 6px 20px rgba(244,162,97,0.4);
+            transition:all 0.3s;
+        }
+        .cta:hover { background:var(--red); transform:translateY(-4px); }
+
+        main { padding:4rem 0 6rem; }
+        article { background:white; padding:3rem; border-radius:var(--radius); box-shadow:var(--shadow); }
+
+        /* LIVE ZONE CHECKER */
+        .checker {
+            background:linear-gradient(135deg,#e6f4f1,#f0f8ff);
+            padding:2.5rem;
+            border-radius:var(--radius);
+            text-align:center;
+            margin:2rem 0;
+            box-shadow:var(--shadow);
+        }
+        .checker input {
+            padding:0.9rem;
+            margin:0.5rem;
+            border:2px solid #ddd;
+            border-radius:12px;
+            font-size:1rem;
+            width:100%;
+            max-width:380px;
+        }
+        .checker button {
+            background:var(--red);
+            color:white;
+            padding:1rem 2.5rem;
+            border:none;
+            border-radius:50px;
+            font-weight:700;
+            cursor:pointer;
+            margin-top:1rem;
+        }
+        #zoneResult {
+            font-size:1.8rem;
+            font-weight:700;
+            margin:1.5rem 0;
+            min-height:70px;
+        }
+
+        .zone-card {
+            background:white;
+            border-left:7px solid var(--red);
+            padding:2rem;
+            margin:2.5rem 0;
+            border-radius:var(--radius);
+            box-shadow:var(--shadow);
+            position:relative;
+            transition:transform 0.3s;
+        }
+        .zone-card:hover { transform:translateY(-8px); }
+        .zone-card.green { border-left-color:var(--green); }
+        .number {
+            position:absolute;
+            top:-20px;
+            left:-20px;
+            background:var(--red);
+            color:white;
+            width:62px;
+            height:62px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:1.8rem;
+            font-weight:bold;
+            box-shadow:0 5px 18px rgba(231,76,60,0.5);
+        }
+        .number.green { background:var(--green); box-shadow:0 5px 18px rgba(39,174,96,0.5); }
+        .impact { font-size:1.5rem; font-weight:700; margin:0.8rem 0; }
+        .impact.red { color:var(--red); }
+        .impact.green { color:var(--green); }
+
+        .summary {
+            width:100%;
+            border-collapse:collapse;
+            margin:3rem 0;
+            box-shadow:var(--shadow);
+            border-radius:var(--radius);
+            overflow:hidden;
+        }
+        .summary th {
+            background:var(--zone);
+            color:white;
+            padding:1.3rem;
+        }
+        .summary td { padding:1.1rem; border-bottom:1px solid #eee; }
+        .summary tr:nth-child(even) { background:#f8f9fa; }
+
+        .toc {
+            background:var(--light);
+            padding:2rem;
+            border-radius:var(--radius);
+            border:1px solid #eee;
+            margin:2rem 0;
+        }
+        .toc ul { columns:2; gap:2rem; list-style:none; }
+        .toc li { margin:0.7rem 0; position:relative; padding-left:2rem; }
+        .toc li::before { content:'Map'; position:absolute; left:0; color:var(--gold); font-weight:bold; }
+
+        footer {
+            background:var(--dark);
+            color:#ccc;
+            text-align:center;
+            padding:2rem 0;
+            font-size:0.9rem;
+        }
+
+        @media (max-width:768px) {
+            .hero-title { font-size:2.3rem; }
+            .toc ul { columns:1; }
+            .checker input { max-width:100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="hero-title">2025 Zoning Decoder<br>Don’t Buy a $750K Park</h1>
+        <p class="hero-subtitle">Melbourne buyer loses $85K extension. Brisbane seller flips $1.2M → $2.1M. Live zone checker + 60-second red-flag test.</p>
+        <a href="https://www.firstclasslegal.com.au/" target="_blank" class="cta">Get My FREE Zoning Red-Flag Checklist</a>
+    </div>
+</header>
+
+<main class="container">
+    <article>
+
+        <!-- LIVE ZONE CHECKER -->
+        <div class="checker">
+            <h2 style="font-size:2rem; margin-bottom:1rem; color:var(--zone);">60-Second Zone Checker</h2>
+            <input type="text" id="address" placeholder="Enter street address (e.g. 12 Smith St, Richmond VIC)">
+            <button onclick="checkZone()">Reveal My Zone</button>
+            <div id="zoneResult">Type address above ↑</div>
+            <div id="zoneDetails" style="font-size:0.95rem; max-width:600px; margin:1rem auto;"></div>
+        </div>
+
+        <!-- Summary Table -->
+        <table class="summary">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Zone</th>
+                    <th>Renovate?</th>
+                    <th>Subdivide?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>GRZ1</td><td>Yes</td><td>Yes (2 lots)</td></tr>
+                <tr><td>2</td><td>NRZ1</td><td>9 m height</td><td>No</td></tr>
+                <tr><td>3</td><td>C1Z</td><td>Shop downstairs</td><td>6 storeys</td></tr>
+                <tr><td>4</td><td>PPRZ</td><td>No house</td><td>Never</td></tr>
+                <tr><td>5</td><td>MUZ</td><td>8 storeys</td><td>Goldmine</td></tr>
+            </tbody>
+        </table>
+
+        <!-- TOC -->
+        <div class="toc">
+            <h3>Jump to Any Zone</h3>
+            <ul>
+                <li><a href="#z1">Zone 1 – GRZ1 (Green Light)</a></li>
+                <li><a href="#z2">Zone 2 – NRZ1 (Red Light)</a></li>
+                <li><a href="#z3">Zone 3 – C1Z (Shop + Flat)</a></li>
+                <li><a href="#z4">Zone 4 – PPRZ (Public Park)</a></li>
+                <li><a href="#z5">Zone 5 – MUZ (8-Storey Gold)</a></li>
+                <li><a href="#overlay">5 Overlays That Kill Plans</a></li>
+            </ul>
+        </div>
+
+        <!-- Zone 1 -->
+        <div class="zone-card green" id="z1">
+            <div class="number green">1</div>
+            <h2>GRZ1 – General Residential (Most Common)</h2>
+            <p class="impact green">Renovate: YES | Subdivide: 2 lots</p>
+            <p>Height: 11 m | Site coverage: 60%</p>
+        </div>
+
+        <!-- Zone 2 -->
+        <div class="zone-card" id="z2">
+            <div class="number">2</div>
+            <h2>NRZ1 – Neighbourhood Residential (Lock-Down)</h2>
+            <p class="impact red">Height: 9 m | Only 1 dwelling</p>
+            <p>2025 Melbourne story: $85K extension refused.</p>
+        </div>
+
+        <!-- Zone 3 -->
+        <div class="zone-card green" id="z3">
+            <div class="number green">3</div>
+            <h2>C1Z – Commercial 1 (Shop + Flat)</h2>
+            <p class="impact green">Build café downstairs, live upstairs</p>
+            <p>Brisbane 2025: $1.2M → $2.1M flip.</p>
+        </div>
+
+        <!-- Zone 4 -->
+        <div class="zone-card" id="z4">
+            <div class="number">4</div>
+            <h2>PPRZ – Public Park & Recreation</h2>
+            <p class="impact red">You CANNOT build a house</p>
+            <p>2025 trap: Buyer paid $750K for council park.</p>
+        </div>
+
+        <!-- Zone 5 -->
+        <div class="zone-card green" id="z5">
+            <div class="number green">5</div>
+            <h2>MUZ – Mixed Use (8-Storey Gold)</h2>
+            <p class="impact green">Apartments + offices</p>
+            <p>DA lodgement = instant $800K uplift.</p>
+        </div>
+
+        <!-- Overlays -->
+        <div class="zone-card" id="overlay">
+            <div class="number">X</div>
+            <h2>5 Overlays That Kill Plans</h2>
+            <ol style="font-size:1.1rem; line-height:1.9;">
+                <li><strong>HO – Heritage:</strong> Can’t paint fence</li>
+                <li><strong>LSIO – Flood:</strong> Must raise floor 1.2 m</li>
+                <li><strong>DDO – Design:</strong> 3-storey max</li>
+                <li><strong>ESO – Environmental:</strong> No tree removal</li>
+                <li><strong>SBO – Bushfire:</strong> $45K fire bunker</li>
+            </ol>
+        </div>
+
+        <!-- Final CTA -->
+        <div style="text-align:center; background:linear-gradient(135deg,#e6f4f1,#f0f8ff); padding:3.5rem; border-radius:18px; margin:4rem 0;">
+            <h2 style="font-size:2.3rem; border:none;">Never Buy a Park Again</h2>
+            <p style="font-size:1.25rem; max-width:700px; margin:1.2rem auto;">
+                Download the <strong>FREE 2025 Zoning Red-Flag Checklist</strong> – 60-second test, printable zone cheat-sheet, 5 overlay traps.
+            </p>
+            <a href="https://www.firstclasslegal.com.au/" target="_blank" class="cta" style="font-size:1.25rem; padding:1.3rem 3.2rem;">
+                YES – Send My Checklist (60 sec)
+            </a>
+        </div>
+
+    </article>
+</main>
+
+<footer>
+    <div class="container">
+        © 2025 First Class Legal. All rights reserved.
+    </div>
+</footer>
+
+<script>
+function checkZone() {
+    const addr = document.getElementById('address').value.toLowerCase();
+    let zone = "Unknown";
+    let details = "";
+
+    // Mock lookup (replace with real API in production)
+    if (addr.includes("richmond") || addr.includes("fitzroy")) zone = "GRZ1";
+    else if (addr.includes("camberwell") || addr.includes("kew")) zone = "NRZ1";
+    else if (addr.includes("southbank") || addr.includes("docklands")) zone = "MUZ";
+    else if (addr.includes("park")) zone = "PPRZ";
+    else if (addr.includes("cbd") || addr.includes("fortitude")) zone = "C1Z";
+
+    const colors = { GRZ1: "#27ae60", NRZ1: "#e74c3c", MUZ: "#27ae60", PPRZ: "#e74c3c", C1Z: "#27ae60" };
+    document.getElementById('zoneResult').innerHTML = `<span style="color:${colors[zone]}">${zone}</span>`;
+    
+    if (zone === "GRZ1") details = "Green light! Renovate & subdivide (2 lots).";
+    if (zone === "NRZ1") details = "Red light. 9 m height, 1 dwelling only.";
+    if (zone === "MUZ") details = "Goldmine! 8 storeys possible.";
+    if (zone === "PPRZ") details = "STOP! Public park – no house allowed.";
+    if (zone === "C1Z") details = "Shop downstairs, flat upstairs.";
+
+    document.getElementById('zoneDetails').innerHTML = details;
+}
+</script>
+
+</body>
+</html>
